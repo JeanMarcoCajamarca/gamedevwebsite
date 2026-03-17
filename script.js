@@ -7,11 +7,11 @@
 
 // ─── BOOT SEQUENCE ───────────────────────────────────────────────
 const bootLines = [
-  'BIOS v2.006 // CAJAMARCA SYSTEMS INC.',
+  'BIOS v1.000 // CAJAMARCA SYSTEMS INC.',
   'Initializing memory banks......... OK',
   'Loading core modules.............. OK',
   'Mounting filesystem............... OK',
-  'Starting portfolio daemon......... OK',
+  'Starting portfolio................ OK',
   'Establishing neural link.......... OK',
   '',
   '>>> WELCOME, VISITOR. ACCESS GRANTED.',
@@ -70,10 +70,14 @@ function runBootSequence() {
 
 // ─── TYPEWRITER — HERO TAGLINE ───────────────────────────────────
 const taglines = [
-  'Tech · Business · Economics Professional',
-  'Data-Driven Decision Maker',
-  'Game Developer & Creative Technologist',
-  'Building Things That Matter',
+  'Game Developer & Creative Artist',
+  'Twitch Streamer',
+  'Less Professional Than AAA',
+  'Building Things Gamers Love',
+  'Legend Of Zelda : Twilight Princess Is GOAT',
+  'Long Live Garrus Vakarian',
+  'Illidan Stormrage Is King',
+  'KARLACH',
 ];
 
 function initTypewriter() {
@@ -117,8 +121,7 @@ function initTypewriter() {
 
 // ─── TERMINAL SKILL OUTPUT ───────────────────────────────────────
 const terminalSkills = [
-  'Python · SQL · JavaScript',
-  'Economics · Business Strategy',
+  'Python · SQL · JavaScript · HTML · CSS',
   'Data Analytics · BI Tools',
   'Game Development (Indie)',
 ];
@@ -142,8 +145,6 @@ function initTerminalSkills() {
 
 // ─── SKILLS BARS ─────────────────────────────────────────────────
 const skills = [
-  { name: 'Business & Economics', pct: 92 },
-  { name: 'Data Analytics / SQL', pct: 85 },
   { name: 'Python / Scripting', pct: 78 },
   { name: 'Web Development', pct: 74 },
   { name: 'Game Development', pct: 68 },
