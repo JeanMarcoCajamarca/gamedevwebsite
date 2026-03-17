@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jean Marco Cajamarca // Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;700;900&family=VT323&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Scanline overlay -->
+  <div class="scanlines" aria-hidden="true"></div>
+  <!-- CRT flicker overlay -->
+  <div class="crt-flicker" aria-hidden="true"></div>
+
+  <!-- Boot sequence splash -->
+  <div id="boot-screen" aria-hidden="true">
+    <div class="boot-text" id="boot-text"></div>
+  </div>
+
+  <!-- NAVIGATION -->
+  <header id="site-header">
+    <nav class="navbar">
+      <div class="nav-logo">
+        <span class="bracket">[</span>JMC<span class="bracket">]</span>
+        <span class="nav-blink">_</span>
+      </div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about" class="nav-item" data-label="01">ABOUT</a></li>
+        <li><a href="#projects" class="nav-item" data-label="02">PROJECTS</a></li>
+        <li><a href="#blog" class="nav-item" data-label="03">BLOG</a></li>
+        <li><a href="#resume" class="nav-item" data-label="04">RESUME</a></li>
+        <li><a href="#contact" class="nav-item" data-label="05">CONTACT</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section id="hero">
+      <div class="hero-grid-bg" aria-hidden="true"></div>
+      <div class="hero-content">
+        <div class="hero-status">
+          <span class="status-dot"></span>
+          <span class="status-text">SYSTEM ONLINE // AVAILABLE FOR HIRE</span>
+        </div>
+        <h1 class="hero-name">
+          <span class="hero-first">JEAN MARCO</span>
+          <br />
+          <span class="hero-last">CAJAMARCA</span>
+        </h1>
+        <p class="hero-tagline" id="hero-tagline"></p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">VIEW PROJECTS</a>
+          <a href="#contact" class="btn btn-secondary">ESTABLISH CONTACT</a>
+        </div>
+        <div class="hero-social">
+          <a href="https://www.instagram.com" target="_blank" rel="noopener" class="social-link" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+            <span>INSTAGRAM</span>
+          </a>
+          <a href="https://www.facebook.com" target="_blank" rel="noopener" class="social-link" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            <span>FACEBOOK</span>
+          </a>
+          <a href="https://www.linkedin.com" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            <span>LINKEDIN</span>
+          </a>
+        </div>
+      </div>
+      <div class="hero-terminal" aria-hidden="true">
+        <div class="terminal-header">
+          <span class="t-dot red"></span>
+          <span class="t-dot yellow"></span>
+          <span class="t-dot green"></span>
+          <span class="t-title">jmc@portfolio:~</span>
+        </div>
+        <div class="terminal-body" id="terminal-body">
+          <p><span class="t-prompt">$</span> <span class="t-cmd">whoami</span></p>
+          <p class="t-output">jean_marco_cajamarca</p>
+          <p><span class="t-prompt">$</span> <span class="t-cmd">cat skills.txt</span></p>
+          <div class="t-output" id="skills-output"></div>
+          <p class="t-cursor-line"><span class="t-prompt">$</span> <span class="t-cursor">█</span></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="section-header">
+        <span class="section-num">// 01</span>
+        <h2 class="section-title">ABOUT.EXE</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
+          <p class="about-intro">Hello, World. I'm Jean Marco —</p>
+          <p>A tech & business professional passionate about solving real-world problems through data, strategy, and technology. I operate at the intersection of economics, business intelligence, and product thinking.</p>
+          <p>Whether it's crunching datasets, designing systems, or building side projects in game dev — I bring analytical rigor and creative energy to everything I ship.</p>
+          <div class="about-specs">
+            <div class="spec-item">
+              <span class="spec-label">LOCATION</span>
+              <span class="spec-value">Pennsylvania, US</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">STATUS</span>
+              <span class="spec-value spec-green">Open to Opportunities</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">FIELDS</span>
+              <span class="spec-value">Tech / Business / Economics</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">SIDE QUESTS</span>
+              <span class="spec-value">Game Dev, Writing, Art</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-skills-panel">
+          <div class="panel-label">SKILL_STACK.LOG</div>
+          <div class="skills-bars" id="skills-bars"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <div class="section-header">
+        <span class="section-num">// 02</span>
+        <h2 class="section-title">PROJECTS.DIR</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="projects-grid">
+
+        <!-- Game Dev Portfolio card -->
+        <article class="project-card featured">
+          <div class="card-tag">FEATURED</div>
+          <div class="card-icon">🎮</div>
+          <h3 class="card-title">GAME DEV PORTFOLIO</h3>
+          <p class="card-desc">A dedicated showcase of my game development work — concepts, prototypes, and shipped projects built with passion and code.</p>
+          <div class="card-stack">
+            <span class="tag">Game Design</span>
+            <span class="tag">Dev</span>
+            <span class="tag">Interactive</span>
+          </div>
+          <a href="https://jeanmarcocajamarca.github.io/gamedevwebsite/" target="_blank" rel="noopener" class="btn btn-primary card-btn">LAUNCH SITE →</a>
+        </article>
+
+        <article class="project-card">
+          <div class="card-icon">📊</div>
+          <h3 class="card-title">DATA ANALYTICS PROJECT</h3>
+          <p class="card-desc">Economic data pipeline and visualization dashboard analyzing market trends using Python and BI tools.</p>
+          <div class="card-stack">
+            <span class="tag">Python</span>
+            <span class="tag">SQL</span>
+            <span class="tag">BI</span>
+          </div>
+          <a href="#contact" class="btn btn-secondary card-btn">INQUIRE →</a>
+        </article>
+
+        <article class="project-card">
+          <div class="card-icon">💼</div>
+          <h3 class="card-title">BUSINESS STRATEGY CASE</h3>
+          <p class="card-desc">Comprehensive market entry analysis and go-to-market strategy developed for an emerging tech startup.</p>
+          <div class="card-stack">
+            <span class="tag">Strategy</span>
+            <span class="tag">Research</span>
+            <span class="tag">Finance</span>
+          </div>
+          <a href="#contact" class="btn btn-secondary card-btn">INQUIRE →</a>
+        </article>
+
+        <article class="project-card">
+          <div class="card-icon">🌐</div>
+          <h3 class="card-title">WEB DEVELOPMENT</h3>
+          <p class="card-desc">Full-stack web projects combining intuitive UX with robust backend logic. You're looking at one right now.</p>
+          <div class="card-stack">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+          </div>
+          <a href="#contact" class="btn btn-secondary card-btn">INQUIRE →</a>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- BLOG -->
+    <section id="blog">
+      <div class="section-header">
+        <span class="section-num">// 03</span>
+        <h2 class="section-title">BLOG.LOG</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="blog-grid">
+
+        <article class="blog-card">
+          <div class="blog-meta">
+            <span class="blog-date">2025.03.10</span>
+            <span class="blog-category">ECONOMICS</span>
+          </div>
+          <h3 class="blog-title">The Tech Economy in 2025: What the Numbers Actually Say</h3>
+          <p class="blog-excerpt">A data-driven look at hiring trends, venture capital flow, and the sectors quietly dominating growth despite the headlines.</p>
+          <a href="#" class="blog-read-more">READ MORE →</a>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-meta">
+            <span class="blog-date">2025.02.22</span>
+            <span class="blog-category">GAME DEV</span>
+          </div>
+          <h3 class="blog-title">From Concept to Prototype: My Game Dev Workflow</h3>
+          <p class="blog-excerpt">How I go from a napkin sketch to a playable loop — tools, timelines, and the lessons learned from shipping small projects.</p>
+          <a href="#" class="blog-read-more">READ MORE →</a>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-meta">
+            <span class="blog-date">2025.01.14</span>
+            <span class="blog-category">TECH</span>
+          </div>
+          <h3 class="blog-title">Why Every Business Analyst Should Learn to Code</h3>
+          <p class="blog-excerpt">The case for technical literacy in business roles — and the specific skills that unlock the most value, fast.</p>
+          <a href="#" class="blog-read-more">READ MORE →</a>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- RESUME -->
+    <section id="resume">
+      <div class="section-header">
+        <span class="section-num">// 04</span>
+        <h2 class="section-title">RESUME.PDF</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="resume-panel">
+        <div class="resume-preview">
+          <div class="resume-icon" aria-hidden="true">
+            <svg viewBox="0 0 80 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="5" y="5" width="70" height="90" rx="4" stroke="currentColor" stroke-width="2"/>
+              <line x1="18" y1="30" x2="62" y2="30" stroke="currentColor" stroke-width="2"/>
+              <line x1="18" y1="42" x2="62" y2="42" stroke="currentColor" stroke-width="1"/>
+              <line x1="18" y1="52" x2="50" y2="52" stroke="currentColor" stroke-width="1"/>
+              <line x1="18" y1="62" x2="55" y2="62" stroke="currentColor" stroke-width="1"/>
+              <line x1="18" y1="72" x2="45" y2="72" stroke="currentColor" stroke-width="1"/>
+              <rect x="18" y="18" width="20" height="6" rx="1" fill="currentColor" opacity="0.3"/>
+            </svg>
+          </div>
+          <div class="resume-info">
+            <p class="resume-name">Jean Marco Cajamarca</p>
+            <p class="resume-desc">Tech · Business · Economics</p>
+            <p class="resume-updated">Last updated: 2025</p>
+          </div>
+        </div>
+        <div class="resume-actions">
+          <a href="resume.pdf" download class="btn btn-primary resume-btn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            DOWNLOAD RESUME
+          </a>
+          <a href="resume.pdf" target="_blank" class="btn btn-secondary resume-btn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            VIEW ONLINE
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="section-header">
+        <span class="section-num">// 05</span>
+        <h2 class="section-title">CONTACT.SH</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <p class="contact-intro">Ready to collaborate? Whether you're a recruiter, a founder, or just curious — let's connect.</p>
+          <div class="contact-methods">
+            <a href="mailto:your@email.com" class="contact-method">
+              <div class="cm-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div class="cm-text">
+                <span class="cm-label">EMAIL</span>
+                <span class="cm-value">your@email.com</span>
+              </div>
+            </a>
+            <a href="tel:+10000000000" class="contact-method">
+              <div class="cm-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.18h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.96a16 16 0 0 0 6.13 6.13l.86-.86a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </div>
+              <div class="cm-text">
+                <span class="cm-label">PHONE</span>
+                <span class="cm-value">+1 (000) 000-0000</span>
+              </div>
+            </a>
+          </div>
+          <div class="contact-social">
+            <a href="https://www.instagram.com" target="_blank" rel="noopener" class="social-pill">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+              Instagram
+            </a>
+            <a href="https://www.facebook.com" target="_blank" rel="noopener" class="social-pill">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+              Facebook
+            </a>
+            <a href="https://www.linkedin.com" target="_blank" rel="noopener" class="social-pill">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              LinkedIn
+            </a>
+          </div>
+        </div>
+        <form class="contact-form" id="contact-form" novalidate>
+          <div class="form-group">
+            <label for="name" class="form-label">NAME</label>
+            <input type="text" id="name" name="name" class="form-input" placeholder="Your name" required />
+          </div>
+          <div class="form-group">
+            <label for="email" class="form-label">EMAIL</label>
+            <input type="email" id="email" name="email" class="form-input" placeholder="your@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="message" class="form-label">MESSAGE</label>
+            <textarea id="message" name="message" class="form-input form-textarea" placeholder="Hello Jean Marco..." required rows="5"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary form-submit">
+            TRANSMIT MESSAGE
+            <span class="send-icon">→</span>
+          </button>
+          <div class="form-status" id="form-status" aria-live="polite"></div>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer id="site-footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="bracket">[</span>JMC<span class="bracket">]</span>
+        <span class="footer-year" id="footer-year"></span>
+      </div>
+      <p class="footer-copy">Built with code &amp; caffeine. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#hero">TOP ↑</a>
+        <a href="https://jeanmarcocajamarca.github.io/gamedevwebsite/" target="_blank" rel="noopener">GAME DEV →</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
